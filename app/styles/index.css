@@ -1,0 +1,199 @@
+.placeholder.image {
+  width: 5em;
+  height: 5em;
+  border-radius: 4em;
+  background-color: darkred;
+  margin: 0em 0.3em 0em 0.3em;
+  display: flex;
+}
+
+.section {
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.section h1 {
+  font-weight: 700;
+  user-select: none;
+  cursor: default;
+  margin: 0em 0em;
+  font-size: 1.75em;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 1.15em;
+}
+
+.section .title,
+.section h3 {
+  user-select: none;
+  cursor: default;
+}
+
+.section p {
+  user-select: none;
+  cursor: default;
+}
+
+.section .content.carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.section .content.carousel .carousel.item {
+  flex: 1;
+  margin: 1em 0em 1em 0em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section .content.carousel .carousel.item {
+  text-align: center;
+  font-weight: 300;
+}
+
+.section .content.carousel .carousel.item .top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: stretch;
+}
+
+.section .content.carousel .carousel.item:nth-child(even) .top {
+  flex-direction: row-reverse;
+}
+
+.section .content.carousel .carousel.item .top .title {
+  font-size: 1.25em;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.section .content.carousel .carousel.item p {
+  margin: 1.5em 0em;
+}
+
+.intro.section {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.intro.title {
+  flex: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2em 0em;
+}
+
+.intro.title .placeholder.image {
+  width: 8em;
+  height: 8em;
+  border-radius: 8em;
+}
+
+.intro.title .title.text {
+  font-size: 1.5em;
+  font-weight: 700;
+  flex: 1;
+  margin: 0em 0.5em;
+}
+
+.intro.content {
+  margin: 1em 0.5em;
+  user-select: none;
+  cursor: default;
+}
+
+.intro.content .content.subtitle {
+  font-size: 1em;
+  font-weight: 300;
+  margin: 1em 0em;
+}
+
+.intro.content .content.text {
+  font-size: 0.85em;
+  font-weight: 200;
+  margin: 1em 0em;
+}
+
+@media screen and (min-width: 600px) {
+  .placeholder.image {
+    width: 7.5em;
+    height: 7.5em;
+    border-radius: 7.5em;
+    margin: 1em;
+  }
+
+  .section {
+    padding: 1em 1em 3em 1em;
+  }
+
+  .section h1 {
+    font-size: 3.5em;
+  }
+
+  .intro.section {
+    align-items: center;
+  }
+
+  .intro.title {
+    flex: 1;
+    margin: 3em 0em 0em 0em;
+  }
+
+  .intro.title .placeholder.image {
+    width: 15em;
+    height: 15em;
+    border-radius: 15em;
+  }
+
+  .intro.title .title.text {
+    font-size: 4.5em;
+    font-weight: 700;
+  }
+
+  .intro.content {
+    margin: 5em;
+  }
+
+  .intro.content .content.subtitle {
+    font-size: 2em;
+    font-weight: 300;
+  }
+
+  .intro.content .content.text {
+    font-size: 1.25em;
+    font-weight: 200;
+  }
+
+  .section .content.carousel {
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+
+  .section .content.carousel .carousel.item {
+    margin: 2em 3em 0em 3em;
+  }
+
+  .section .content.carousel .carousel.item .top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section .content.carousel .carousel.item:nth-child(even) .top {
+    flex-direction: column;
+    align-items: center;
+  }
+}

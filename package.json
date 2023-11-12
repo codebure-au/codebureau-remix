@@ -1,0 +1,30 @@
+{
+  "name": "codebureau-remix",
+  "version": "1.0.0",
+  "description": "codebure.au with remix",
+  "main": "index.js",
+  "repository": "https://github.com/codebure-au/codebureau-remix.git",
+  "author": "Anthony Francis",
+  "license": "MIT",
+  "devDependencies": {
+    "@remix-run/dev": "^2.2.0",
+    "@types/express": "^4.17.21",
+    "@types/react": "^18.2.34",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@remix-run/express": "^2.2.0",
+    "@remix-run/node": "^2.2.0",
+    "@remix-run/react": "^2.2.0",
+    "express": "^4.18.2",
+    "isbot": "^3.7.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "build": "npx remix build",
+    "start": "node server.mjs",
+    "dev": "remix dev -c \"node server.mjs\""
+  },
+  "type": "module"
+}
